@@ -1,0 +1,285 @@
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  nav .hamburger {
+    display: inline-block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav_right ul {
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    right: -200%;
+    width: 16rem;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+  }
+
+  .toggle {
+    right: 0 !important;
+  }
+
+  nav li a {
+    padding: 0 3rem;
+  }
+
+  nav ul i {
+    justify-self: end;
+    align-self: flex-end;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nft_top,
+  .history_content,
+  .woof_content {
+    flex-direction: column;
+  }
+
+  .team_members {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .love_dog,
+  .sorrow_dog,
+  .lock_pin,
+  .logo_dog,
+  .con_with_banner {
+    display: none;
+  }
+
+  .social_icons {
+    flex-direction: column;
+    gap: 0;
+  }
+  .gen2_bottom p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .lg {
+    display: none;
+  }
+
+  .sm {
+    display: block;
+  }
+  section {
+    overflow: visible;
+  }
+
+  .benji {
+    left: 2.2rem;
+    img {
+      width: 22rem;
+    }
+  }
+
+  .bee img {
+    left: 7rem;
+    bottom: 20rem;
+  }
+
+  .hero_dog img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .butterfly {
+    right: -5rem;
+    top: 0;
+  }
+
+  .butter_yellow img {
+    width: 4rem;
+  }
+
+  .butter_red img {
+    width: 3.2rem;
+  }
+
+  .social_icons img {
+    width: 3.5rem;
+  }
+
+  .main {
+    background-image: url(images/main/main_bg_mbl.png);
+  }
+
+  .grass_sm {
+    display: flex;
+  }
+  .grass_lg {
+    display: none;
+  }
+
+  // nft
+
+  .nft {
+    position: relative;
+  }
+  .nft_content {
+    margin-top: -10rem;
+    // transform: translateY(-10rem);
+  }
+
+  .nft_text h3 {
+    text-shadow: 4px 3px 11px rgba(0, 0, 0, 0.342);
+  }
+
+  .loves {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    .yellow_love_sm {
+      position: absolute;
+      top: 2rem;
+      img {
+        width: 2rem;
+      }
+    }
+    .red_love_sm {
+      position: absolute;
+      img {
+        width: 1.5rem;
+      }
+    }
+  }
+
+  .nft_right {
+    margin-top: 2rem;
+
+    .bone img {
+      max-width: 8rem;
+      left: -3rem;
+      bottom: -1.2rem;
+      transform: rotate(40deg);
+      width: 100%;
+    }
+  }
+  .bottom_text_sm {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+  }
+
+  .nft .cam_dog_sm img {
+    position: absolute;
+    width: 11.5rem;
+    right: -1rem;
+    bottom: 4rem;
+    transform: rotate(13deg) scale(-1, 1);
+  }
+
+  .nft_content {
+  }
+  .nft_bottom {
+    position: static;
+  }
+
+  // history
+  .history {
+    background-image: url(images/history/history_bg_mbl.png);
+  }
+
+  .frame_sm {
+    img {
+      position: absolute;
+      bottom: -1rem;
+      right: -6rem;
+      width: 6rem;
+      transform: rotate(-25deg);
+    }
+  }
+  .history_content {
+    gap: 1rem;
+  }
+
+  .frame_dog {
+    img {
+      max-width: 18rem;
+      width: 100%;
+    }
+  }
+
+  .flower_gif_sm img {
+    position: absolute;
+    left: -2rem;
+    top: -4rem;
+    width: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    .social_icons {
+      display: none;
+    }
+
+    .benji_logo img {
+      width: 18.5rem;
+    }
+
+    .bee img {
+      width: 2.5rem;
+      // transform: scaleX(-1);
+      left: 4rem;
+      bottom: 20rem;
+    }
+  }
+
+  ul .extra_sm {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 3rem;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  .nft {
+    .cam_dog_sm img {
+      bottom: 2rem;
+    }
+
+    .bone img {
+      max-width: 6rem;
+      left: -2rem;
+      bottom: -1.2rem;
+    }
+  }
+
+  .utility_top {
+    h2 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .flower_gif_sm img {
+    left: -1rem;
+    top: -4rem;
+    width: 3.5rem;
+  }
+
+  .utility .thum_img {
+    display: none;
+  }
+
+  .gen2_content p {
+    font-size: 1.5rem;
+  }
+
+  .gen2_top_text .scretch_img {
+    display: none;
+  }
+}

@@ -1,0 +1,926 @@
+/*---------------------------------------------------- import Fonts ----------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@font-face {
+  font-family: "Blueberry";
+  src: url(fonts/Blueberry.ttf) format("truetype");
+  letter-spacing: 2px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f172a;
+  --p-clr: #8d9cb1;
+  --fntwit: 400;
+  --comforta: "Comfortaa", cursive;
+  --text_clr_main: #23547b;
+  --text_clr_red: #f14a58;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: var(--fntwit);
+}
+
+p {
+  line-height: 1.2;
+}
+
+input,
+button {
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--orng);
+  padding: 0.7rem 1.5rem;
+  border-radius: 3px;
+  color: var(--white);
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-justify-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-justify-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  border-radius: 5px;
+  padding: 0 2rem;
+}
+
+body {
+  font-family: "special elite", "Roboto", sans-serif;
+  font-weight: var(--fntwit);
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Blueberry";
+  letter-spacing: 2px;
+}
+
+span,
+p {
+  font-family: "Special Elite";
+  font-size: 1.4rem;
+}
+
+section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sm, ul .extra_sm {
+  display: none;
+}
+
+header {
+  z-index: 999;
+  background-color: white;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+nav,
+nav ul,
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_left {
+  font-weight: 900;
+  font-size: 2rem;
+  color: black;
+}
+
+.nav_left a {
+  font-weight: 900;
+  color: var(--bg);
+  border: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.nav_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_right ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.nav li a {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.nav ul li a {
+  font-weight: 800;
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+  opacity: 1;
+}
+
+.nav ul li .bold {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.main {
+  background-image: url(images/main_bg1.png);
+  height: 650px;
+  position: relative;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social_icons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.social_icons img {
+  width: 4rem;
+}
+
+.hero_dog img,
+.sun img,
+.grass img,
+.bee img {
+  position: absolute;
+}
+
+.benji {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}
+
+.butterfly {
+  position: absolute;
+  right: -5rem;
+  top: 3rem;
+}
+
+.benji img {
+  width: 28rem;
+}
+
+.butter_yellow img {
+  width: 4rem;
+}
+
+.butter_red img {
+  width: 3.2rem;
+  -webkit-transform: translate(1rem, 1.2rem);
+          transform: translate(1rem, 1.2rem);
+}
+
+.bee img {
+  width: 2.5rem;
+  -webkit-transform: rotate(-20deg) scaleX(-1);
+          transform: rotate(-20deg) scaleX(-1);
+  left: 4rem;
+  bottom: 20rem;
+}
+
+.hero_dog img {
+  width: 13.5rem;
+  bottom: 0;
+  left: 8rem;
+}
+
+.grass img {
+  width: 100%;
+  bottom: 0;
+}
+
+.grass_sm {
+  display: none;
+}
+
+.nft {
+  position: relative;
+  padding: 8rem 0 12rem 0;
+  background-image: url(images/nft_bg.png);
+  text-align: center;
+  height: 100%;
+}
+
+.nft .nft_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.nft p {
+  margin-top: 1rem;
+}
+
+.nft p span {
+  color: #dbdb00;
+}
+
+.nft h3 {
+  font-size: 2.5rem;
+}
+
+.nft_left {
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.yellow_love img {
+  position: absolute;
+  width: 3rem;
+  top: -4.5rem;
+  left: -3rem;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.red_love img {
+  position: absolute;
+  width: 4rem;
+  top: -1rem;
+  left: 0;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.nft_right {
+  position: relative;
+}
+
+.nft_right .dog_gf img {
+  max-width: 24rem;
+  width: 100%;
+  min-width: 17rem;
+}
+
+.nft_right .bug img {
+  position: absolute;
+  top: -2.5rem;
+  right: 3rem;
+  width: 2rem;
+}
+
+.nft_right .bone img {
+  position: absolute;
+  width: 11.3rem;
+  right: -5rem;
+  bottom: -3.6rem;
+}
+
+.nft_bottom {
+  position: relative;
+}
+
+.nft_bottom h3 {
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+
+.nft_bottom .cam_dog img {
+  position: absolute;
+  width: 14rem;
+  left: 0rem;
+  bottom: 1.4rem;
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+}
+
+.history {
+  padding: 5rem 0;
+  background-image: url(images/history/history_bg1.png);
+}
+
+.history_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  text-align: center;
+}
+
+.history_content h3 {
+  font-size: 2.6rem;
+}
+
+.history_left {
+  position: relative;
+}
+
+.frame img {
+  position: absolute;
+  top: -1rem;
+  left: -6rem;
+  width: 6rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.frame_dog img {
+  width: 23rem;
+}
+
+.history_right {
+  position: relative;
+  max-width: 25rem;
+  width: 100%;
+}
+
+.history_right .flower_gif img {
+  position: absolute;
+  right: -1rem;
+  top: -1.5rem;
+  width: 4.5rem;
+}
+
+.history_right p {
+  margin-top: 1rem;
+}
+
+.team {
+  background-image: url(images/team/team_bg.png);
+  padding: 5rem 0;
+}
+
+.team_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_content h2 {
+  font-size: 2rem;
+}
+
+.team_content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.team_content h2,
+.team_content h4,
+.team_content a {
+  color: #23547b;
+}
+
+.team_members {
+  margin-top: 4rem;
+}
+
+.team_members {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.member a {
+  font-size: 1.3rem;
+}
+
+.member_img img {
+  width: 9rem;
+}
+
+.member_info {
+  max-width: 23rem;
+  width: 100%;
+}
+
+.member_info p:last-child {
+  margin-top: 1rem;
+}
+
+.team_members .member:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  text-align: end;
+}
+
+.member_img {
+  position: relative;
+}
+
+.love_dog img {
+  position: absolute;
+  width: 4.8rem;
+  top: -7.4rem;
+  right: -0.8rem;
+}
+
+.utility {
+  padding: 5rem 0 1rem 0;
+  background-image: url(images/utility/utility_bg.png);
+}
+
+.utility p,
+.utility span {
+  color: var(--text_clr_main);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.utility span {
+  color: var(--text_clr_red);
+}
+
+.utility_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.sorrow_dog img {
+  position: absolute;
+  left: -2rem;
+  top: -1rem;
+}
+
+.utility_top {
+  display: inline-block;
+  position: relative;
+}
+
+.utility h2 {
+  font-family: "blueberry";
+  color: var(--text_clr_red);
+  font-size: 2.2rem;
+  z-index: 5;
+}
+
+.lock_pin img {
+  position: absolute;
+  right: -1.9rem;
+  bottom: -1.9rem;
+  width: 2.5rem;
+}
+
+.utility_middle {
+  margin-top: 2.5rem;
+}
+
+.thum_text {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thum_text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.thum_text .text p {
+  max-width: 35rem;
+  width: 100%;
+}
+
+.thum_text p,
+.thum_text span {
+  font-size: 1.1rem;
+}
+
+.thum_text .text_second {
+  position: relative;
+}
+
+.thum_text .text_second .logo_dog img {
+  position: absolute;
+  right: -7rem;
+  top: 1rem;
+  width: 7.5rem;
+}
+
+.thum_img img {
+  width: 1.8rem;
+  position: absolute;
+  top: 0rem;
+}
+
+.text_first img {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  top: -0.4rem;
+}
+
+.text_second .thum_img img {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: -0.5rem;
+  top: -0.8rem;
+}
+
+.text_third img {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  left: -2.5rem;
+}
+
+.text_fourth img {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 1rem;
+  left: -1rem;
+}
+
+.utility_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.utility_bottom p {
+  font-size: 1.7rem;
+}
+
+.gen2 {
+  padding-bottom: 4rem;
+  background-image: url(images/gen2/gen2_bg.png);
+}
+
+.gen2 a,
+.gen2 p,
+.gen2 span {
+  font-family: "blueberry";
+  color: var(--text_clr_main);
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+.gen2_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.gen2_top p {
+  max-width: calc(100% - 5rem);
+  margin: 0 auto;
+}
+
+.gen2_top span {
+  color: var(--text_clr_red);
+}
+
+.gen2_top .light_clr {
+  color: #fa99af;
+}
+
+.gen2_top_text {
+  position: relative;
+}
+
+.gen2_top_text .scretch_img {
+  position: absolute;
+  left: 20rem;
+  bottom: -1rem;
+}
+
+.clapboard img {
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+.gen2_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.gen2_bottom p {
+  font-size: 1.5rem;
+  width: 83%;
+}
+
+.con_with_banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dog_banner {
+  position: absolute;
+}
+
+.dog_banner img {
+  width: 8rem;
+}
+
+.dog_banner_first {
+  top: 3rem;
+  left: -2rem;
+}
+
+.dog_banner_third {
+  top: -0.5rem;
+  right: -2rem;
+}
+
+.dog_banner_second {
+  top: 1rem;
+  left: -14rem;
+}
+
+.dog_banner_fourth {
+  top: -0.5rem;
+  right: -14rem;
+}
+
+p .light_clr {
+  color: #fa99af;
+}
+
+p .red_clr {
+  color: var(--text_clr_red);
+}
+
+p .comma {
+  font-family: "Special Elite";
+}
+
+.woof {
+  padding: 10rem 0;
+  background-color: #ebbeb1;
+}
+
+.woof_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.woof_left img {
+  max-width: 35rem;
+  width: 100%;
+}
+
+.woof_right h3 {
+  color: var(--text_clr_main);
+  font-size: 3rem;
+}
+
+.footer_social_icons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_social_icons img {
+  width: 4rem;
+}
+
+.sticky {
+  position: fixed;
+}
+/*# sourceMappingURL=style.css.map */
