@@ -121,9 +121,10 @@
   }
   .nft {
     position: relative;
+    padding-bottom: 12rem;
   }
   .nft_content {
-    margin-top: -10rem;
+    margin-top: -8rem;
   }
   .nft_text h3 {
     text-shadow: 4px 3px 11px rgba(0, 0, 0, 0.342);
@@ -166,7 +167,7 @@
     position: absolute;
     width: 11.5rem;
     right: -1rem;
-    bottom: 4rem;
+    bottom: 3rem;
     -webkit-transform: rotate(13deg) scale(-1, 1);
             transform: rotate(13deg) scale(-1, 1);
   }
@@ -174,6 +175,7 @@
     position: static;
   }
   .history {
+    padding: 5rem 0;
     background-image: url(images/history/history_bg_mbl.png);
   }
   .frame_sm img {
@@ -188,7 +190,7 @@
     gap: 1rem;
   }
   .frame_dog img {
-    max-width: 18rem;
+    max-width: 17rem;
     width: 100%;
   }
   .flower_gif_sm img {
@@ -197,14 +199,17 @@
     top: -4rem;
     width: 4.5rem;
   }
+  .utility .thum_img {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .main .social_icons {
     display: none;
   }
   .main .benji_logo img {
-    width: 18.5rem;
+    width: 22rem;
   }
   .main .bee img {
     width: 2.5rem;
@@ -240,9 +245,6 @@
     left: -1rem;
     top: -4rem;
     width: 3.5rem;
-  }
-  .utility .thum_img {
-    display: none;
   }
   .gen2_content p {
     font-size: 1.5rem;

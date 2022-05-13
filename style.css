@@ -149,7 +149,8 @@ section {
   overflow: hidden;
 }
 
-.sm, ul .extra_sm {
+.sm,
+ul .extra_sm {
   display: none;
 }
 
@@ -333,7 +334,7 @@ li {
 
 .nft {
   position: relative;
-  padding: 6rem 0;
+  padding-top: 6rem;
   background-image: url(images/nft_bg.png);
   text-align: center;
   height: 100%;
@@ -419,6 +420,7 @@ li {
 .nft_bottom h3 {
   font-size: 3rem;
   margin-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 .nft_bottom .cam_dog img {
