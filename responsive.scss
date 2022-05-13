@@ -284,3 +284,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main .benji_logo img {
+    width: 18rem;
+  }
+}
