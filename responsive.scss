@@ -179,8 +179,6 @@
     transform: rotate(13deg) scale(-1, 1);
   }
 
-  .nft_content {
-  }
   .nft_bottom {
     position: static;
   }
@@ -219,6 +217,9 @@
   }
 
   .utility .thum_img {
+    display: none;
+  }
+  .gen2_top_text .scretch_img {
     display: none;
   }
 }
@@ -280,13 +281,102 @@
     font-size: 1.5rem;
   }
 
-  .gen2_top_text .scretch_img {
-    display: none;
+  .gen2_top_text p {
+    max-width: 100%;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .main .benji_logo img {
-    width: 18rem;
+@media screen and (max-width: 460px) {
+  .main {
+    height: 450px;
+
+    .hero_dog img {
+      width: 10rem;
+    }
+    .benji_logo img {
+      width: 18rem;
+    }
+    .bee img {
+      bottom: 12rem;
+      width: 2.2rem;
+    }
+
+    .butter_yellow img {
+      width: 3.5rem;
+    }
+
+    .butter_red img {
+      width: 2.8rem;
+    }
+
+    .butterfly {
+      right: -3.7rem;
+    }
+  }
+
+  .nft {
+    .text_header h3 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .team {
+    .member {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    text-align: center;
+    .team_members .member:nth-child(even) {
+      flex-flow: column;
+      text-align: center;
+    }
+  }
+
+  .utility_top {
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .team_top {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main {
+    .hero_dog img {
+      width: 9rem;
+    }
+    .benji_logo img {
+      width: 15rem;
+    }
+
+    .bee img {
+      left: 1rem;
+    }
+  }
+
+  .nft {
+    .text_header h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .bottom_text_sm {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
