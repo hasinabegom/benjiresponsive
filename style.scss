@@ -226,15 +226,14 @@ li {
   opacity: 1;
 }
 
-.nav ul li .bold {
+.nav ul li .active {
   opacity: 1;
-  font-weight: 500;
 }
 
 ////////////////////////////  Main_Area ////////////////////////////
 
 .main {
-  background-image: url(images/main_bg1.png);
+  background-image: url(images/main/main_bg.png);
   height: 650px;
   position: relative;
 
@@ -314,7 +313,7 @@ li {
 .nft {
   position: relative;
   padding-top: 6rem;
-  background-image: url(images/nft_bg.png);
+  background-image: url(images/nft/nft_bg.png);
   text-align: center;
   height: 100%;
 
