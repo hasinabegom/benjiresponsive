@@ -380,17 +380,30 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .main {
     .hero_dog img {
       width: 9rem;
     }
     .benji_logo img {
-      width: 15rem;
+      width: 16rem;
     }
 
     .bee img {
       left: 1rem;
+    }
+
+    .butterfly {
+      top: 4.5rem;
+      right: -2rem;
+    }
+
+    .butter_yellow img {
+      width: 3rem;
+    }
+
+    .butter_red img {
+      width: 2.3rem;
     }
   }
 

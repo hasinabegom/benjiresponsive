@@ -341,15 +341,25 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .main .hero_dog img {
     width: 9rem;
   }
   .main .benji_logo img {
-    width: 15rem;
+    width: 16rem;
   }
   .main .bee img {
     left: 1rem;
+  }
+  .main .butterfly {
+    top: 4.5rem;
+    right: -2rem;
+  }
+  .main .butter_yellow img {
+    width: 3rem;
+  }
+  .main .butter_red img {
+    width: 2.3rem;
   }
   .nft .text_header h3 {
     font-size: 1.5rem;
