@@ -584,6 +584,10 @@ li {
   right: -0.8rem;
 }
 
+.team_top .butter_red img {
+  display: none;
+}
+
 .utility {
   padding: 3rem 0 1rem 0;
   background-image: url(images/utility/utility_bg.png);
@@ -711,10 +715,14 @@ li {
   top: -0.8rem;
 }
 
-.text_third img {
+.text_third .thum_img img {
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
   left: -2.5rem;
+}
+
+.text_third .logo_dog img {
+  display: none;
 }
 
 .text_fourth img {
@@ -887,7 +895,7 @@ p .comma {
 }
 
 .woof {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background-color: #ebbeb1;
 }
 

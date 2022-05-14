@@ -54,7 +54,7 @@
   .love_dog,
   .sorrow_dog,
   .lock_pin,
-  .logo_dog,
+  .text_second .logo_dog,
   .con_with_banner {
     display: none;
   }
@@ -67,6 +67,25 @@
   }
   .gen2_bottom p {
     width: 100%;
+  }
+  .team_top {
+    position: relative;
+  }
+  .team_top .butter_red img {
+    display: block;
+    position: absolute;
+    right: -2rem;
+    top: -3rem;
+  }
+  .text_third {
+    position: relative;
+  }
+  .text_third .logo_dog img {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    right: -8rem;
+    top: -2rem;
   }
 }
 
@@ -202,6 +221,10 @@
   .utility .thum_img {
     display: none;
   }
+  .thum_text p,
+  .thum_text span {
+    font-size: 1.3rem;
+  }
   .gen2_top_text .scretch_img {
     display: none;
   }
@@ -254,6 +277,9 @@
   }
   .gen2_top_text p {
     max-width: 100%;
+  }
+  .logo_dog {
+    display: none;
   }
 }
 
@@ -333,6 +359,33 @@
   }
   .nft .bottom_text_sm h2 {
     font-size: 1.3rem;
+  }
+  .gen2_content p,
+  .gen2_content span {
+    font-size: 1.4rem;
+  }
+  .utility_top h2 {
+    font-size: 1.56rem;
+  }
+  .utility_content p,
+  .utility_content span {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main {
+    height: 350px;
+  }
+  .main .hero_dog img {
+    width: 8rem;
+  }
+  .main .benji_logo img {
+    width: 12rem;
+  }
+  .main .bee img {
+    left: 1rem;
+    bottom: 10rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
