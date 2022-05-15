@@ -436,6 +436,9 @@ Screen - 400px
   .nft .bottom_text_sm h2 {
     font-size: 1.3rem;
   }
+  .nft .nft_content {
+    margin-top: -7.42rem;
+  }
   .gen2_content p,
   .gen2_content span {
     font-size: 1.4rem;
