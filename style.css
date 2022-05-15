@@ -745,8 +745,13 @@ Gen2 Area
 .gen2 span {
   font-family: "blueberry";
   color: var(--text_clr_main);
-  font-size: 1.9rem;
-  line-height: 1.3;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gen2_content {
+  padding: 0 2.5rem;
 }
 
 .gen2_top {
@@ -761,11 +766,6 @@ Gen2 Area
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-}
-
-.gen2_top p {
-  max-width: calc(100% - 5rem);
-  margin: 0 auto;
 }
 
 .gen2_top span {
@@ -800,11 +800,9 @@ Gen2 Area
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  gap: 2rem;
 }
 
 .gen2_bottom p {
-  font-size: 1.5rem;
   width: 83%;
 }
 
@@ -823,7 +821,7 @@ Gen2 Area
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5rem;
+  gap: 2rem;
 }
 
 .dog_banner {
@@ -831,27 +829,27 @@ Gen2 Area
 }
 
 .dog_banner img {
-  width: 8rem;
+  width: 7.5rem;
 }
 
 .dog_banner_first {
   top: 3rem;
-  left: -2rem;
+  left: -4.5rem;
 }
 
 .dog_banner_third {
   top: -0.5rem;
-  right: -2rem;
+  right: -4.5rem;
 }
 
 .dog_banner_second {
-  top: 1rem;
-  left: -14rem;
+  top: 20rem;
+  left: -4.5rem;
 }
 
 .dog_banner_fourth {
-  top: -0.5rem;
-  right: -14rem;
+  top: 20.5rem;
+  right: -4rem;
 }
 
 p .light_clr {
