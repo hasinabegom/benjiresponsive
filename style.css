@@ -535,6 +535,10 @@ Team Area
   margin-top: 1rem;
 }
 
+.only_one_p p {
+  margin-top: 10rem;
+}
+
 .team_members .member:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
