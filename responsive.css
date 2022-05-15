@@ -353,7 +353,14 @@ Screen - 460px
     font-size: 1.5rem;
   }
   .history_left .frame img {
-    width: 1rem;
+    left: -5rem;
+  }
+  .history_left img {
+    right: -4rem;
+  }
+  .history_left .frame img,
+  .frame_sm img {
+    width: 4rem;
   }
 }
 
@@ -363,6 +370,18 @@ Screen - 400px
 @media screen and (max-width: 400px) {
   .team_top h2 {
     font-size: 1.5rem;
+  }
+  .history_left .frame img {
+    left: -3rem;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .history_left img {
+    right: -2rem;
+  }
+  .history_left .frame img,
+  .frame_sm img {
+    width: 3.2rem;
   }
 }
 
@@ -406,6 +425,11 @@ Screen - 400px
   .utility_content span {
     font-size: 1.3rem;
   }
+  .history_left .frame img {
+    left: -2.2rem;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
 }
 
 /*---------------------------------------------------- 
@@ -424,6 +448,11 @@ Screen - 300px
   .main .bee img {
     left: 1rem;
     bottom: 10rem;
+  }
+  .nft .bone img {
+    max-width: 4rem;
+    left: -1rem;
+    bottom: -0.5rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -325,8 +325,8 @@ Screen - 640px
   .gen2_top_text p {
     max-width: 100%;
   }
-    .thum_text .text_second .logo_dog {
-      display: none;
+  .thum_text .text_second .logo_dog {
+    display: none;
   }
 }
 
@@ -392,8 +392,16 @@ Screen - 460px
   }
 
   .history_left .frame img {
-  width: 1rem;
-}
+    left: -5rem;
+  }
+  .history_left img {
+    right: -4rem;
+  }
+
+  .history_left .frame img,
+  .frame_sm img {
+    width: 4rem;
+  }
 }
 /*---------------------------------------------------- 
 Screen - 400px
@@ -404,6 +412,19 @@ Screen - 400px
     h2 {
       font-size: 1.5rem;
     }
+  }
+
+  .history_left .frame img {
+    left: -3rem;
+    transform: rotate(-30deg);
+  }
+  .history_left img {
+    right: -2rem;
+  }
+
+  .history_left .frame img,
+  .frame_sm img {
+    width: 3.2rem;
   }
 }
 
@@ -467,6 +488,11 @@ Screen - 400px
       font-size: 1.3rem;
     }
   }
+
+  .history_left .frame img {
+    left: -2.2rem;
+    transform: rotate(-30deg);
+  }
 }
 
 /*---------------------------------------------------- 
@@ -486,5 +512,11 @@ Screen - 300px
       left: 1rem;
       bottom: 10rem;
     }
+  }
+
+  .nft .bone img {
+    max-width: 4rem;
+    left: -1rem;
+    bottom: -0.5rem;
   }
 }
