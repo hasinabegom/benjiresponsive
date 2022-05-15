@@ -71,50 +71,6 @@ button {
   color: var(--white);
 }
 
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flex-justify-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.flex-justify-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -159,10 +115,12 @@ ul .extra_sm {
   display: none;
 }
 
-////////////////////////////  Header Area ////////////////////////////
+/*---------------------------------------------------- 
+Header Area
+----------------------------------------------------*/
 
 header {
-  z-index: 999;
+  z-index: 99;
   background-color: white;
   right: 0;
   left: 0;
@@ -230,7 +188,9 @@ li {
   opacity: 1;
 }
 
-////////////////////////////  Main_Area ////////////////////////////
+/*---------------------------------------------------- 
+Main Area
+----------------------------------------------------*/
 
 .main {
   background-image: url(images/main/main_bg.png);
@@ -308,7 +268,9 @@ li {
   display: none;
 }
 
-////////////////////////////  NFT_Area ////////////////////////////
+/*---------------------------------------------------- 
+NFT Area
+----------------------------------------------------*/
 
 .nft {
   position: relative;
@@ -398,7 +360,9 @@ li {
   }
 }
 
-////////////////////////////  History_Area ////////////////////////////
+/*---------------------------------------------------- 
+History Area
+----------------------------------------------------*/
 
 .history {
   padding: 6rem 0 10rem 0;
@@ -456,7 +420,9 @@ li {
   }
 }
 
-////////////////////////////  Team_Area ////////////////////////////
+/*---------------------------------------------------- 
+Team Area
+----------------------------------------------------*/
 
 .team {
   background-image: url(images/team/team_bg.png);
@@ -536,12 +502,18 @@ li {
 }
 
 .team_top {
+  h2 {
+    color: #202020;
+    font-size: 2.5rem;
+  }
   .butter_red img {
     display: none;
   }
 }
 
-////////////////////////////  Utility_Area ////////////////////////////
+/*---------------------------------------------------- 
+Utility Area
+----------------------------------------------------*/
 .utility {
   padding: 3rem 0 1rem 0;
   background-image: url(images/utility/utility_bg.png);
@@ -566,8 +538,8 @@ li {
 
 .sorrow_dog img {
   position: absolute;
-  left: -2rem;
-  top: -1rem;
+  left: -11rem;
+  top: -0.5rem;
 }
 
 .utility_top {
@@ -648,15 +620,11 @@ li {
     transform: rotate(-25deg);
     left: -2.5rem;
   }
-
-  .logo_dog img {
-    display: none;
-  }
 }
 .text_fourth img {
-  transform: rotate(10deg);
-  top: 1rem;
-  left: -1rem;
+  transform: rotate(5deg);
+  top: -1rem;
+  left: 8.5rem;
 }
 
 .pink_dog img {
@@ -675,7 +643,9 @@ li {
   }
 }
 
-////////////////////////////  Gen2_Area ////////////////////////////
+/*---------------------------------------------------- 
+Gen2 Area
+----------------------------------------------------*/
 .gen2 {
   padding-bottom: 4rem;
   background-image: url(images/gen2/gen2_bg.png);
@@ -712,12 +682,6 @@ li {
 }
 .gen2_top_text {
   position: relative;
-
-  .scretch_img {
-    position: absolute;
-    left: 20rem;
-    bottom: -1rem;
-  }
 }
 
 .clapboard img {
@@ -745,6 +709,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 5rem;
 }
 
 .dog_banner {
@@ -784,7 +749,9 @@ p .comma {
   font-family: "Special Elite";
 }
 
-////////////////////////////  Woof_Area ////////////////////////////
+/*---------------------------------------------------- 
+Woof Area
+----------------------------------------------------*/
 
 .woof {
   padding: 6rem 0;
@@ -822,8 +789,9 @@ p .comma {
   }
 }
 
-// sticky
-
+/*-----
+Sticky nav
+---*/
 .sticky {
   position: fixed;
 }

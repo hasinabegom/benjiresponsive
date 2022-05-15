@@ -2,6 +2,10 @@
 }
 @media screen and (max-width: 1024px) {
 }
+
+/*---------------------------------------------------- 
+Screen - 768px
+----------------------------------------------------*/
 @media screen and (max-width: 768px) {
   nav .hamburger {
     display: inline-block;
@@ -9,7 +13,20 @@
     cursor: pointer;
   }
 
+  .nav_op {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.192);
+    transition: 0.5s ease-in-out;
+  }
+
   .nav_right ul {
+    z-index: 9999;
     position: absolute;
     background-color: white;
     flex-direction: column;
@@ -50,7 +67,6 @@
   .love_dog,
   .sorrow_dog,
   .lock_pin,
-  .text_second .logo_dog,
   .con_with_banner {
     display: none;
   }
@@ -74,18 +90,20 @@
     }
   }
 
-  .text_third {
-    position: relative;
-    .logo_dog img {
-      display: block;
-      position: absolute;
-      width: 5rem;
-      right: -8rem;
-      top: -2rem;
-    }
+  .team_members {
+    margin-top: 2rem;
+  }
+
+  .thum_text .text_second .logo_dog img {
+    right: -2rem;
+    top: 3rem;
+    width: 5rem;
   }
 }
 
+/*---------------------------------------------------- 
+Screen - 640px
+----------------------------------------------------*/
 @media screen and (max-width: 640px) {
   .lg {
     display: none;
@@ -246,10 +264,6 @@
   .thum_text span {
     font-size: 1.3rem;
   }
-
-  .gen2_top_text .scretch_img {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -311,12 +325,18 @@
   .gen2_top_text p {
     max-width: 100%;
   }
-  .logo_dog {
-    display: none;
+    .thum_text .text_second .logo_dog {
+      display: none;
   }
 }
 
+/*---------------------------------------------------- 
+Screen - 460px
+----------------------------------------------------*/
 @media screen and (max-width: 460px) {
+  .nav {
+    padding: 0;
+  }
   .main {
     height: 450px;
 
@@ -370,7 +390,14 @@
       font-size: 1.5rem;
     }
   }
+
+  .history_left .frame img {
+  width: 1rem;
 }
+}
+/*---------------------------------------------------- 
+Screen - 400px
+----------------------------------------------------*/
 
 @media screen and (max-width: 400px) {
   .team_top {
@@ -442,6 +469,9 @@
   }
 }
 
+/*---------------------------------------------------- 
+Screen - 300px
+----------------------------------------------------*/
 @media screen and (max-width: 300px) {
   .main {
     height: 350px;
