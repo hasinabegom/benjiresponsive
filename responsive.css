@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+  .nft_right .bone img {
+    width: 8.3rem;
+    right: -3rem;
+    bottom: -2.6rem;
+  }
   .gen2 {
     text-align: center;
   }
@@ -125,6 +130,13 @@ Screen - 768px
     top: 3rem;
     width: 5rem;
   }
+  .nft_right .bone img {
+    width: 8.3rem;
+    right: -3rem;
+    bottom: -2.5rem;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
   .nft_bottom .cam_dog img {
     width: 8.5rem;
     left: 0;
@@ -218,7 +230,7 @@ Screen - 640px
   .nft_right .bone img {
     max-width: 8rem;
     left: -3rem;
-    bottom: -1.2rem;
+    bottom: -2.2rem;
     -webkit-transform: rotate(40deg);
             transform: rotate(40deg);
     width: 100%;
