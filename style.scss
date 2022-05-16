@@ -467,20 +467,13 @@ Team Area
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
+  justify-content: space-around;
   justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
 .member {
   display: flex;
   gap: 1rem;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-
 
   a {
     font-size: 1.3rem;
@@ -498,13 +491,17 @@ Team Area
     margin-top: 1rem;
   }
 }
-.team_members .member:nth-child(odd) {
-  text-align: left;
+
+.without_margin p:last-child {
+  margin-top: 0;
 }
 
 .team_members .member:nth-child(even) {
   flex-flow: row-reverse;
-  text-align: end;
+  text-align: right;
+}
+.team_members .member:nth-child(odd) {
+  text-align: left;
 }
 
 .member_img {
