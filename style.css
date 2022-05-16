@@ -506,9 +506,15 @@ Team Area
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .member {
@@ -516,6 +522,15 @@ Team Area
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .member a {
@@ -533,6 +548,10 @@ Team Area
 
 .member_info p:last-child {
   margin-top: 1rem;
+}
+
+.team_members .member:nth-child(odd) {
+  text-align: left;
 }
 
 .team_members .member:nth-child(even) {
