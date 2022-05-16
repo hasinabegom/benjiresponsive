@@ -74,8 +74,10 @@ button {
 .container {
   margin: 0 auto;
   max-width: 1280px;
+  width: 100%;
   border-radius: 5px;
   padding: 0 2rem;
+  text-align: center;
 }
 
 body {
@@ -108,7 +110,15 @@ section {
   background-position: top center;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
+
+// .main::after {
+//   content: "the BENJI nft";
+//   bottom: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
 .sm,
 ul .extra_sm {
@@ -196,7 +206,6 @@ Main Area
   background-image: url(images/main/main_bg.png);
   height: 650px;
   position: relative;
-
   .container {
     display: flex;
     justify-content: flex-end;
@@ -276,8 +285,8 @@ NFT Area
   position: relative;
   padding-top: 6rem;
   background-image: url(images/nft/nft_bg.png);
-  text-align: center;
   height: 100%;
+  width: 100%;
 
   .nft_top {
     display: flex;
@@ -353,10 +362,9 @@ NFT Area
 
   .cam_dog img {
     position: absolute;
-    width: 14rem;
-    left: 0rem;
-    bottom: 1.4rem;
-    transform: rotate(-13deg);
+    width: 10.5rem;
+    left: 3rem;
+    bottom: 3.4rem;
   }
 }
 
@@ -374,7 +382,6 @@ History Area
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  text-align: center;
 
   h3 {
     font-size: 2.6rem;
@@ -485,7 +492,6 @@ Team Area
   }
 }
 
-
 .team_members .member:nth-child(even) {
   flex-flow: row-reverse;
   text-align: end;
@@ -521,7 +527,7 @@ Utility Area
   p,
   span {
     color: var(--text_clr_main);
-    text-align: center;
+
     line-height: 1.5;
   }
   span {
@@ -657,7 +663,6 @@ Gen2 Area
     color: var(--text_clr_main);
     font-size: 1.75rem;
     line-height: 1.5;
-    text-align: center;
   }
 }
 
@@ -669,7 +674,6 @@ Gen2 Area
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 
   span {
     color: var(--text_clr_red);
@@ -692,7 +696,6 @@ Gen2 Area
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 
   p {
     width: 83%;

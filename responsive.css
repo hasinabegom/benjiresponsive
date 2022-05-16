@@ -122,9 +122,9 @@ Screen - 640px
     display: none;
   }
   .sm {
-    display: block;
+    display: inline-block;
   }
-  section {
+  .nft {
     overflow: visible;
   }
   .benji {
@@ -206,17 +206,18 @@ Screen - 640px
     width: 100%;
   }
   .bottom_text_sm {
+    position: relative;
     margin: 0 auto;
     margin-top: 3rem;
     width: 90%;
   }
   .nft .cam_dog_sm img {
     position: absolute;
-    width: 11.5rem;
-    right: -1rem;
+    width: 9rem;
+    right: 1rem;
     bottom: 3rem;
-    -webkit-transform: rotate(13deg) scale(-1, 1);
-            transform: rotate(13deg) scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
   }
   .nft_bottom {
     position: static;
@@ -432,6 +433,9 @@ Screen - 400px
   }
   .nft p {
     font-size: 1.3rem;
+  }
+  .nft .bottom_text_sm {
+    position: relative;
   }
   .nft .bottom_text_sm h2 {
     font-size: 1.3rem;
