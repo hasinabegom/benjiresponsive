@@ -918,4 +918,20 @@ Sticky nav
 .sticky {
   position: fixed;
 }
+
+/*-----
+overly nav
+---*/
+.nav_links.bg {
+  background-color: #0f172a46;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
 /*# sourceMappingURL=style.css.map */
