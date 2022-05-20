@@ -2,15 +2,15 @@ $(document).ready(function () {
   // Open/Close Menu
   navOpnCls = function () {
     $("ul").toggleClass("toggle");
-    $(".nav_links").toggleClass("bg");
+    $(".overly").toggleClass("bg");
   };
   $(".hamburger").click(navOpnCls);
   $("nav ul a").click(navOpnCls);
 
   // nav overly
   $("ul").click((e) => e.stopPropagation());
-  $(".nav_links").click(() => {
-    $(".nav_links").removeClass("bg");
+  $(".overly").click(() => {
+    $(".overly").removeClass("bg");
     $("ul").removeClass("toggle");
   });
 

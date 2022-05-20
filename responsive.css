@@ -14,6 +14,11 @@
   .dog_banner img {
     width: 6rem;
   }
+  .team_members {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 3rem;
+  }
   .history {
     padding-top: 3.5rem;
     padding-bottom: 6rem;
@@ -34,17 +39,8 @@ Screen - 768px
     font-size: 1.8rem;
     cursor: pointer;
   }
-  .nav_op {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.192);
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+  .overly.bg {
+    display: block;
   }
   .nav_right ul {
     z-index: 9999;
@@ -88,11 +84,6 @@ Screen - 768px
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .team_members {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    gap: 3rem;
   }
   .love_dog,
   .sorrow_dog,

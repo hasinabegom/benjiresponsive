@@ -922,7 +922,8 @@ Sticky nav
 /*-----
 overly nav
 ---*/
-.nav_links.bg {
+.overly.bg {
+  display: none;
   background-color: #0f172a46;
   position: absolute;
   height: 100vh;
